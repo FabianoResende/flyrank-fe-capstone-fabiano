@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Configurações - Round 2</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f4f4;
+            color: #222;
+        }
+
+        .container {
+            max-width: 650px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,.1);
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        .campo {
+            margin-bottom: 22px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #bbb;
+            border-radius: 5px;
+        }
+
+        input:focus,
+        select:focus {
+            outline: 3px solid #6aa9ff;
+        }
+
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .checkbox-container label {
+            margin: 0;
+            font-weight: normal;
+        }
+
+        .erro {
+            color: #c00000;
+            font-size: 0.9rem;
+            margin-top: 6px;
+            min-height: 20px;
+        }
+
+        .campo-com-erro input,
+        .campo-com-erro select {
+            border: 2px solid #c00000;
+        }
+
+        button {
+            padding: 12px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background: #0b67d0;
+            color: white;
+        }
+
+        button:hover {
+            background: #084ea2;
+        }
+
+        #mensagemSucesso {
+            margin-top: 25px;
+            color: green;
+            font-weight: bold;
+            min-height: 24px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Configurações</h1>
+
+    <form id="configForm" novalidate>
+
+        <!-- Nome -->
+        <div class="campo" id="grupoNome">
+
+            <label for="nome">
+                Nome *
+            </label>
+
+            <input
+                type="text"
+                id="nome"
+                name="nome"
+                autocomplete="name"
+            >
+
+            <div
+                id="erroNome"
+                class="erro"
+                aria-live="polite">
+            </div>
+
+        </div>
+
+        <!-- Email -->
+        <div class="campo" id="grupoEmail">
+
+            <label for="email">
+                Email *
+            </label>
+
+            <input
+                type="text"
+                id="email"
+                name="email"
+                autocomplete="email"
+            >
+
+            <div
+                id="erroEmail"
+                class="erro"
+                aria-live="polite">
+            </div>
+
+        </div>
+
+        <!-- Tema -->
+        <div class="campo" id="grupoTema">
+
+            <label for="tema">
+                Tema *
+            </label>
+
+            <select id="tema" name="tema">
+
+                <option value="">
+                    Selecione...
+                </option>
+
+                <option value="claro">
+                    Claro
+                </option>
+
+                <option value="escuro">
+                    Escuro
+                </option>
+
+            </select>
+
+            <div
+                id="erroTema"
+                class="erro"
+                aria-live="polite">
+            </div>
+
+        </div>
+
+        <!-- Checkbox -->
+        <div class="campo">
+
+            <div class="checkbox-container">
+
+                <input
+                    type="checkbox"
+                    id="notificacoes"
+                    name="notificacoes"
+                >
+
+                <label for="notificacoes">
+                    Ativar notificações
+                </label>
+
+            </div>
+
+        </div>
+
+        <button type="submit">
+            Salvar
+        </button>
+
+        <div
+            id="mensagemSucesso"
+            aria-live="polite">
+        </div>
+
+    </form>
+
+</div>
+
+<script>
+
+/*
+===================================================
+Formulário de Configurações
+Validação completa
+Acessível
+Sem frameworks
+===================================================
+*/
+
+const formulario = document.getElementById("configForm");
+
+const nome = document.getElementById("nome");
+const email = document.getElementById("email");
+const tema = document.getElementById("tema");
+const notificacoes = document.getElementById("notificacoes");
+
+const erroNome = document.getElementById("erroNome");
+const erroEmail = document.getElementById("erroEmail");
+const erroTema = document.getElementById("erroTema");
+
+const grupoNome = document.getElementById("grupoNome");
+const grupoEmail = document.getElementById("grupoEmail");
+const grupoTema = document.getElementById("grupoTema");
+
+const mensagemSucesso =
+document.getElementById("mensagemSucesso");
+
+/*
+Limpa mensagens anteriores
+*/
+function limparErros(){
+
+    erroNome.textContent = "";
+    erroEmail.textContent = "";
+    erroTema.textContent = "";
+
+    grupoNome.classList.remove("campo-com-erro");
+    grupoEmail.classList.remove("campo-com-erro");
+    grupoTema.classList.remove("campo-com-erro");
+
+    mensagemSucesso.textContent = "";
+
+}
+
+/*
+Validação simples de email
+*/
+function emailValido(valor){
+
+    if(valor.includes(" ")){
+        return false;
+    }
+
+    const regex =
+    /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    return regex.test(valor);
+
+}
+
+/*
+Evento principal
+*/
+formulario.addEventListener("submit", function(event){
+
+    event.preventDefault();
+
+    limparErros();
+
+    let valido = true;
+
+    let primeiroErro = null;
+
+    /*
+    Nome
+    */
+
+    if(nome.value.trim() === ""){
+
+        erroNome.textContent =
+        "O nome é obrigatório.";
+
+        grupoNome.classList.add("campo-com-erro");
+
+        valido = false;
+
+        primeiroErro ??= nome;
+
+    }
+
+    /*
+    Email
+    */
+
+    const emailDigitado =
+    email.value.trim();
+
+    if(emailDigitado === ""){
+
+        erroEmail.textContent =
+        "O email é obrigatório.";
+
+        grupoEmail.classList.add("campo-com-erro");
+
+        valido = false;
+
+        primeiroErro ??= email;
+
+    }
+    else if(!emailValido(emailDigitado)){
+
+        erroEmail.textContent =
+        "Informe um email válido, sem espaços.";
+
+        grupoEmail.classList.add("campo-com-erro");
+
+        valido = false;
+
+        primeiroErro ??= email;
+
+    }
+
+    /*
+    Tema
+    */
+
+    if(tema.value === ""){
+
+        erroTema.textContent =
+        "Selecione um tema.";
+
+        grupoTema.classList.add("campo-com-erro");
+
+        valido = false;
+
+        primeiroErro ??= tema;
+
+    }
+
+    /*
+    Primeiro erro recebe foco
+    */
+
+    if(!valido){
+
+        primeiroErro.focus();
+        return;
+
+    }
+
+    /*
+    Simulação de salvamento
+    */
+
+    const configuracoes = {
+
+        nome: nome.value.trim(),
+
+        email: emailDigitado,
+
+        tema: tema.value,
+
+        notificacoes: notificacoes.checked
+
+    };
+
+    console.log(configuracoes);
+
+    mensagemSucesso.textContent =
+    "Configurações salvas com sucesso";
+
+});
+
+</script>
+
+</body>
+</html>
