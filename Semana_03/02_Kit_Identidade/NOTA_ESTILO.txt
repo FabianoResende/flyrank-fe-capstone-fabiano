@@ -1,0 +1,2 @@
+Fontes: Montserrat (títulos) e Inter (corpo).
+Paleta: Azul #2563EB, texto #111111, fundo #F7F7F7, accent #F97316. Clima técnico, minimalista e calmo, com foco total no conteúdo.
