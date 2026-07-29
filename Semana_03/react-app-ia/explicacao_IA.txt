@@ -1,0 +1,5 @@
+Durante o desenvolvimento da aplicação React, utilizei a IA como assistente técnico para acelerar decisões, estruturar o projeto e resolver problemas de forma eficiente. A IA me ajudou a organizar a arquitetura da aplicação, sugerindo a separação em componentes, pages, services, models e viewmodels, seguindo o padrão MVVM apresentado na mentoria.
+
+A IA auxiliou na criação dos arquivos iniciais, na configuração do React Router, na implementação do serviço OMDB e na montagem da HomeView com busca dinâmica. Também foi essencial na depuração: identificou erros de importação, módulos ausentes, problemas de compilação e a causa do erro relacionado ao arquivo `.env`.
+
+Além disso, guiou o processo de ativação da chave OMDB e ajudou a validar o funcionamento da API. Durante todo o processo, a IA funcionou como um copiloto técnico, acelerando decisões, explicando conceitos e reduzindo o tempo de implementação.
