@@ -1,0 +1,19 @@
+📘 FL‑04 — Prompts e Configurações
+Ferramentas usadas
+NotebookLM: coleta e síntese.
+Projeto Claude: rascunho, revisão e formatação.
+Prompt base para NotebookLM (síntese)
+“Use estas fontes para gerar um resumo estruturado dos principais pontos.
+Foque em clareza, tópicos e organização. Não invente informações.”
+Prompt base para Claude (rascunho de notas)
+“Transforme este resumo em notas de estudo claras e organizadas, com títulos, subtítulos e listas.
+Foque em entendimento, não em embelezar.”
+Prompt base para Claude (revisão)
+“Revise estas notas de estudo para clareza, concisão e organização.
+Aponte possíveis melhorias e corrija frases confusas.”
+Prompt base para Claude (formatação)
+“Formate estas notas de estudo em Markdown, com títulos, subtítulos, listas e destaque para conceitos importantes.”
+Resumo técnico:  
+Os prompts foram projetados para garantir consistência entre as etapas do pipeline.
+Cada comando mantém foco em clareza, estrutura e economia de tempo, evitando redundância e garantindo resultados replicáveis.
+

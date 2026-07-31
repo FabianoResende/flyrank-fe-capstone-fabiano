@@ -1,0 +1,105 @@
+# Notas de Estudo — Semana 4: "Pick the Stack" (FlyRank AI Internship)
+
+> Fonte: [aifluency.flyrank.ai/week-04.html](https://aifluency.flyrank.ai/week-04.html)
+
+## 1. Visão Geral
+
+- **Fase do programa:** Build (Semana 4 de 10)
+- **Tempo estimado:** 4 horas
+- **Tema central:** escolher, com apoio de IA, a stack tecnológica para hospedar o portfólio — e publicar uma versão vazia, porém **ao vivo**, em uma URL real.
+- **Habilidade-chave sendo treinada:** usar a IA como **conselheira que apresenta opções**, não como uma **oráculo que decide por você**.
+
+## 2. Ideia Central
+
+- Não é necessário "ser engenheiro" para tomar essa decisão — é necessário tomar **uma boa decisão**.
+- Regra de ouro: **a melhor stack é a menor que resolve o problema e que você consegue manter.**
+- O comando certo para a IA não é *"construa meu site"*, e sim *"me dê três opções com os trade-offs reais"* — a pessoa decide com os olhos abertos.
+- Marco simbólico da semana: **"vazio, mas ao vivo"** — uma página em branco já publicada em uma URL real. É o passo mais difícil (sair do zero), e feito isso, a semana seguinte já parte de algo existente.
+
+## 3. Por Que Isso Importa
+
+- Saber **como decidir com a IA** é possivelmente a habilidade de fluência em IA mais valiosa do programa.
+- O objetivo não é a IA escolher por você, mas fornecer suas restrições reais, obrigá-la a apresentar opções com trade-offs, e decidir você mesmo.
+- Um detalhe extra deve sempre entrar na conversa: **como seu trabalho precisa ser exibido** (ex.: galerias de imagem, demo ao vivo, código-fonte, texto longo) — isso muda qual é a resposta certa.
+
+## 4. Estrutura das Tarefas (Assignments)
+
+### 4.1 Three Roads — Escolher a Stack com IA
+1. Informar à IA quatro restrições: **apenas ferramentas gratuitas**, **nível real de habilidade**, **o que o portfólio precisa fazer** (sitemap/mapa de conteúdo) e **como o trabalho deve ser exibido**.
+2. Pedir **três opções de stack**, da mais simples à mais poderosa, cada uma com: como construir, onde hospedar gratuitamente, se precisa de backend, e o trade-off real.
+3. Testar a opção favorita: o que quebra se eu escolher a mais simples? o que preciso manter se escolher a mais complexa? dá tempo de terminar? ela exibe meu trabalho como precisa?
+4. Decidir e escrever uma justificativa própria: a stack escolhida, as duas descartadas, e o motivo (incluindo "consigo manter isso?").
+
+### 4.2 Empty but Live — Publicar uma Página em Branco
+1. Criar o projeto vazio na stack escolhida e publicá-lo em uma URL real e acessível (confirmar abrindo pelo celular).
+2. Carregar identidade, estudos de caso e mapa de conteúdo no workspace de IA, preparando a próxima semana de construção.
+
+**Caminho mais fácil recomendado:** **Netlify** via *drag and drop* (sem Git, sem terminal). Regra obrigatória: a página inicial deve se chamar **`index.html`** na raiz da pasta.
+
+## 5. Entregável
+
+- Justificativa escrita (stack escolhida, alternativas consideradas e porquê).
+- URL ao vivo do projeto vazio/quase vazio (mesmo que só mostre o nome).
+- Um screenshot.
+- Envio feito no portal do internship: links públicos em **"Deliverable links"**, capturas em **"Files"**, contexto em **"Notes"**.
+
+## 6. Critérios de Avaliação (Pass/Revise)
+
+- Três opções genuínas com trade-offs foram consideradas (não apenas uma resposta obedecida).
+- Stack escolhida é gratuita, adequada às necessidades reais e exibe bem o tipo de trabalho.
+- Justificativa está em palavras próprias e inclui a pergunta "consigo manter isso?".
+- A questão do backend foi respondida honestamente (a maioria deve responder "ainda não").
+- Existe uma URL real e acessível, testada em um segundo dispositivo, condizente com a stack escolhida.
+- O workspace de IA já contém identidade, estudos de caso e mapa de conteúdo para a próxima semana.
+
+## 7. As Três Estradas (Comparativo)
+
+| Caminho | O que é | Quando é bom |
+|---|---|---|
+| **No-code** | Arrastar e soltar em builders (Carrd, Framer, Canva) | Publicar rápido; trabalho majoritariamente visual |
+| **Código com IA** *(padrão recomendado)* | HTML/CSS simples, escrito com a IA, em host gratuito (Netlify, GitHub Pages, Cloudflare, Vercel) | Quer algo genuinamente seu, gratuito para sempre, e aprender como um site funciona |
+| **Framework completo** | Setup completo de desenvolvedor | Quase nunca necessário para portfólio; só se o site realmente exigir |
+
+## 8. Armadilhas a Evitar
+
+- **Escolher a ferramenta mais impressionante** em vez da mais adequada — "terminar" vale mais que "ser chique".
+- **Aceitar uma resposta única e confiante da IA** — sempre exigir três opções com trade-offs.
+- **Ignorar "como isso será exibido"** — uma stack que não exibe bem as evidências é o erro mais específico de portfólio.
+
+## 9. O Que é "Bom Resultado"
+
+- Conseguir explicar em uma frase por que escolheu sua stack.
+- Página em branco com o nome ao vivo em uma URL, confirmada no celular.
+- Sentir orgulho de "vazio, mas ao vivo" — é a lacuna mais difícil, e ela foi fechada.
+
+## 10. Glossário da Semana
+
+| Termo | Definição |
+|---|---|
+| **Stack** | Conjunto de ferramentas usadas para construir e rodar o site |
+| **No-code** | Construção via ferramenta visual de arrastar e soltar, sem escrever código |
+| **Host/Hosting** | Serviço gratuito que coloca o site online em um endereço |
+| **Repo (repositório)/GitHub** | Pasta que guarda o projeto e lembra cada versão |
+| **Deploy/Publicar** | Colocar a versão mais recente ao vivo |
+| **Backend** | Parte que lembra ou faz algo que uma página estática não consegue; a maioria dos portfólios precisa de apenas um, mais tarde |
+
+## 11. Exemplos Ilustrativos
+
+- **Iris** (trabalho visual): quase escolheu um framework pesado, mas optou por código simples em host gratuito para entender melhor o processo — priorizando galerias de imagem e um protótipo clicável.
+- **Dorian** (trabalho textual/numérico): mesmo prompt de três opções o levou para código simples em host gratuito, priorizando texto longo, limpo e rápido.
+- **Recomendação por área:** Machine Learning → hospedagem que permita embutir demo/notebook e linkar repositório; Marketing → texto longo limpo e rápido; Dev → código em host gratuito também serve como prova de capacidade de entrega.
+
+## 12. Recursos Vinculados
+
+- [MDN — Getting Started with the Web](https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website) — tutorial gratuito
+- [GitHub Pages](https://pages.github.com/) — hospedagem gratuita direto do repositório
+- [Netlify Docs](https://docs.netlify.com/) — hospedagem gratuita com deploy drag-and-drop
+- [Cloudflare Pages](https://pages.cloudflare.com/) — hospedagem estática gratuita, rede global
+- [Carrd](https://carrd.co/) — construtor no-code para sites de uma página
+
+## 13. Perguntas de Estudo
+
+1. Por que pedir "três opções com trade-offs" à IA é mais valioso do que pedir uma resposta pronta?
+2. Que critérios devem pesar mais na escolha entre no-code, código com IA e framework?
+3. Por que "vazio, mas ao vivo" é considerado um marco importante, mesmo sem funcionalidades reais?
+4. Como a forma de exibição do trabalho (imagens, demo, texto, código) deveria influenciar a escolha da stack?
