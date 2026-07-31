@@ -1,0 +1,2 @@
+Fabiano Resende — Teste de leitura MCP.
+Se o Cursor mostrar este texto, a ferramenta read_file está funcionando.
