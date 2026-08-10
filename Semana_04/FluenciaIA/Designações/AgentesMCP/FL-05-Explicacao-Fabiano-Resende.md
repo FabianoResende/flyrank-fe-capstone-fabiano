@@ -1,4 +1,4 @@
-⭐ EXPLICAÇÃO COMPLETA — FL‑05 (600–900 palavras)
+⭐ FL‑05 (600–900 palavras)
 
 Introdução
 A designação FL‑05, “Conceitos de Agentes e Noções Básicas do MCP”, tem como objetivo demonstrar que o estagiário compreende a diferença entre fluxos de trabalho tradicionais e sistemas agentivos, além de provar que sabe utilizar o MCP (Model Context Protocol) para executar ações que um chat comum não consegue realizar. Nesta explicação, apresento os conceitos fundamentais, classifico meu pipeline FL‑04, descrevo o papel do MCP e relato as três tarefas práticas realizadas com o servidor MCP local.
