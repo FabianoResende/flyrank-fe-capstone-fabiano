@@ -16,7 +16,7 @@ export const metadata = {
   
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-4">
             <a
-              href="mailto:seu-email@exemplo.com?subject=Envio%20de%20problema%20real"
+              href="mailto:fabianofariaderesende@gmail.com?subject=Envio%20de%20problema%20real"
               className="inline-flex items-center gap-3 rounded-md px-6 py-3 bg-orange-400 text-slate-900 font-medium shadow-sm hover:bg-orange-300 focus:outline-none focus:ring-2 focus:ring-orange-300"
               aria-label="Enviar problema por email"
             >
