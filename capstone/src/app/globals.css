@@ -1,29 +1,67 @@
-:root{
-  --color-primary:#0B5FFF;
-  --color-accent:#FF8A00;
-  --color-text:#0B0B0B;
-  --color-bg:#FAFAFB;
-  --radius:8px;
+@import "tailwindcss";
+
+/* Theme variables */
+:root {
+  --color-primary: #0B5FFF;
+  --color-accent: #FF8A00;
+  --color-text: #0B0B0B;
+  --color-bg: #FAFAFB;
+  --radius: 8px;
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* Inline theme helpers (for non-Tailwind parts) */
+:root {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 }
 
 /* Button microinteraction */
-a[role="button"], .btn-primary, a[href].inline-flex {
+a[role="button"],
+.btn-primary,
+a[href].inline-flex {
   transition: transform 180ms ease-out, box-shadow 180ms ease-out;
   will-change: transform;
 }
-a[role="button"]:active, .btn-primary:active, a[href].inline-flex:active {
+
+a[role="button"]:active,
+.btn-primary:active,
+a[href].inline-flex:active {
   transform: translateY(1px) scale(0.998);
 }
-a[role="button"]:focus, a[href].inline-flex:focus {
-  box-shadow: 0 0 0 4px rgba(255,138,0,0.12);
+
+a[role="button"]:focus,
+a[href].inline-flex:focus,
+.btn-primary:focus {
+  box-shadow: 0 0 0 4px rgba(255, 138, 0, 0.12);
   outline: none;
 }
 
 /* prefers-reduced-motion fallback */
 @media (prefers-reduced-motion: reduce) {
-  a[role="button"], .btn-primary, a[href].inline-flex {
+  a[role="button"],
+  .btn-primary,
+  a[href].inline-flex {
     transition: none !important;
     transform: none !important;
   }
 }
 
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* Base body */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

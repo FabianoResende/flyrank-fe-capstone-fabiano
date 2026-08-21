@@ -25,14 +25,13 @@ export default function PortfolioHero() {
             </h1>
 
             <p className="text-slate-300 max-w-2xl">
-              Trabalho com análise prática e entrega de recomendações acionáveis.
-              Se você tem um problema real, envie e eu mostro como transformar evidências em decisão.
+              Trabalho com análise prática e entrega de resultados.
+              Se você tem um problema real, envie e eu mostrarei como resolver.
             </p>
           </header>
 
           <div className="mt-8 flex items-center gap-4">
             <CTAButton href="/portfolio/cta-final">Envie um problema real</CTAButton>
-
             <Link href="/portfolio/estudo-de-caso" aria-label="Ver estudo de caso">
               <span className="inline-block text-sm text-slate-300 underline-offset-4 hover:text-white focus:outline-none focus:ring-2 focus:ring-slate-600 rounded px-2 py-1">
                 Ver estudo de caso
