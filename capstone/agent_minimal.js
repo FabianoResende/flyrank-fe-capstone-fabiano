@@ -29,7 +29,6 @@ async function callReadFile(pathToRead) {
     const userPrompt = process.argv.slice(2).join(' ') || 'Leia o README e retorne a primeira linha';
     console.log('AGENT: prompt ->', userPrompt);
 
-    // regra mínima: README dentro da pasta capstone (agente roda na raiz do repo)
     const targetPath = './README.md';
 
     const resp = await callReadFile(targetPath);
@@ -39,7 +38,7 @@ async function callReadFile(pathToRead) {
     }
 
     const firstLine = resp.firstLine || '';
-    const result = `Resumo automático (primeira linha): ${firstLine}`;
+    const result = `Resumo automÃ¡tico (primeira linha): ${firstLine}`;
 
     const timestamp = new Date().toISOString();
     const logLine = `${timestamp} | PROMPT: ${userPrompt} | RESULT: ${result}\n`;
