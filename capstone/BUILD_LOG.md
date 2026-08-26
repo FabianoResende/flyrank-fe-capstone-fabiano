@@ -18,3 +18,7 @@ Ação: listar chaves do .env sem expor valores; não publicar segredos; adicion
 - Observação: .env localizado em Semana_03/react-app-ia/.env (conteúdo não exposto).
 - Próximo passo: configurar MCP local com permissões mínimas e testar read_file seguro.
 2026-08-25 HH:MM � Removed local README backup (cleanup)
+2026-08-25 HH:MM � MCP read_file test
+- Config: capstone/mcp_config.json (read_file only, allowed_paths ./capstone)
+- Test: read_file ./capstone/README.md
+- Resultado: READ_FILE_OK � first line: \
