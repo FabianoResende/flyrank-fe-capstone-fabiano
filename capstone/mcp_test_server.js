@@ -1,59 +1,22 @@
-﻿const http = require('http');
-const fs = require('fs');
-const path = require('path');
+﻿const pidFile = path.join(ROOT, 'mcp_test_server.pid');
 
-const PORT = 3001;
-const HOST = '127.0.0.1';
-const ROOT = path.resolve(__dirname); // pasta capstone
-
-const server = http.createServer((req, res) => {
-  if (req.method !== 'POST' || req.url !== '/execute') {
-    res.writeHead(404, { 'Content-Type': 'application/json' });
-    res.end(JSON.stringify({ ok: false, error: 'not found' }));
-    return;
+server.on('error', (err) => {
+  if (err && err.code === 'EADDRINUSE') {
+    console.error(`ERROR: port ${PORT} already in use. Another instance may be running.`);
+    process.exit(1);
+  } else {
+    console.error('server error', err);
+    process.exit(1);
   }
-
-  let body = '';
-  req.on('data', chunk => body += chunk);
-  req.on('end', () => {
-    try {
-      const reqBody = JSON.parse(body || '{}');
-      if (!reqBody || typeof reqBody.path !== 'string') {
-        res.writeHead(400, { 'Content-Type': 'application/json' });
-        res.end(JSON.stringify({ ok: false, error: 'missing path' }));
-        return;
-      }
-
-      // Resolve path: allow relative to ROOT or absolute only if inside ROOT
-      const requested = reqBody.path;
-      const fullPath = path.isAbsolute(requested) ? path.resolve(requested) : path.resolve(ROOT, requested);
-
-      // Security: ensure file is inside ROOT
-      const allowedRoot = ROOT + path.sep;
-      if (!(fullPath === ROOT || fullPath.startsWith(allowedRoot))) {
-        res.writeHead(403, { 'Content-Type': 'application/json' });
-        res.end(JSON.stringify({ ok: false, error: 'access denied' }));
-        return;
-      }
-
-      const content = fs.readFileSync(fullPath, 'utf8');
-      const firstLine = content.split(/\r?\n/)[0] || '';
-      res.writeHead(200, { 'Content-Type': 'application/json' });
-      res.end(JSON.stringify({ ok: true, firstLine }));
-    } catch (err) {
-      console.error('mcp error:', err && err.stack ? err.stack : err);
-      res.writeHead(500, { 'Content-Type': 'application/json' });
-      res.end(JSON.stringify({ ok: false, error: 'internal server error' }));
-    }
-  });
-
-  req.on('error', err => {
-    console.error('request error', err);
-    res.writeHead(500, { 'Content-Type': 'application/json' });
-    res.end(JSON.stringify({ ok: false, error: 'request error' }));
-  });
 });
 
 server.listen(PORT, HOST, () => {
   console.log(`mcp_test_server listening on ${HOST}:${PORT}`);
+  try { require('fs').writeFileSync(pidFile, String(process.pid), 'utf8'); } catch (e) {}
 });
+
+process.on('exit', () => {
+  try { require('fs').unlinkSync(pidFile); } catch (e) {}
+});
+process.on('SIGINT', () => process.exit(0));
+process.on('SIGTERM', () => process.exit(0));

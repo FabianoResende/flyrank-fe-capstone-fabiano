@@ -6,10 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "mcp-server": "node ./mcp_test_server.js",
+    "mcp-stop": "powershell -Command \"if (Test-Path './mcp_test_server.pid') { $pid = Get-Content './mcp_test_server.pid'; Stop-Process -Id $pid -Force }\""
   },
   "dependencies": {
-    "next": "^16.3.1",
+    "next": "^13.1.1",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },
