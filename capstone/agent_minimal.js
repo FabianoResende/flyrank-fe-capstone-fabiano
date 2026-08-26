@@ -1,7 +1,7 @@
 // capstone/agent_minimal.js
 // Uso: node capstone/agent_minimal.js "Leia o README e resuma a primeira linha"
-const http = require('http');
-const { execSync } = require('child_process');
+const path = require('path');
+const targetPath = path.join('.', 'capstone', 'README.md'); // ou './README.md' se agente rodar dentro de capstone
 
 async function callReadFile(path) {
   const body = JSON.stringify({ tool: 'read_file', path });
@@ -31,7 +31,7 @@ async function callReadFile(path) {
     console.log('AGENT: prompt ->', userPrompt);
 
     // 1) decidir qual arquivo ler (regra mínima: README dentro de ./capstone)
-    const targetPath = './capstone/README.md';
+    const targetPath = './README.md';
 
     // 2) chamar a ferramenta read_file
     const resp = await callReadFile(targetPath);
