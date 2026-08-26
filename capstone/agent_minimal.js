@@ -1,10 +1,9 @@
-// capstone/agent_minimal.js
-// Uso: node capstone/agent_minimal.js "Leia o README e resuma a primeira linha"
+const http = require('http');
 const path = require('path');
-const targetPath = path.join('.', 'capstone', 'README.md'); // ou './README.md' se agente rodar dentro de capstone
+const fs = require('fs');
 
-async function callReadFile(path) {
-  const body = JSON.stringify({ tool: 'read_file', path });
+async function callReadFile(pathToRead) {
+  const body = JSON.stringify({ tool: 'read_file', path: pathToRead });
   return new Promise((resolve, reject) => {
     const req = http.request({
       hostname: '127.0.0.1',
@@ -30,26 +29,22 @@ async function callReadFile(path) {
     const userPrompt = process.argv.slice(2).join(' ') || 'Leia o README e retorne a primeira linha';
     console.log('AGENT: prompt ->', userPrompt);
 
-    // 1) decidir qual arquivo ler (regra mínima: README dentro de ./capstone)
+    // regra m�nima: README dentro da pasta capstone (agente roda na raiz do repo)
     const targetPath = './README.md';
 
-    // 2) chamar a ferramenta read_file
     const resp = await callReadFile(targetPath);
     if (!resp || !resp.ok) {
       console.error('AGENT: read_file falhou', resp);
       process.exit(2);
     }
 
-    // 3) processar saída (exemplo simples: compor resposta)
     const firstLine = resp.firstLine || '';
-    const result = `Resumo automático (primeira linha): ${firstLine}`;
+    const result = `Resumo autom�tico (primeira linha): ${firstLine}`;
 
-    // 4) registrar resultado localmente (log)
     const timestamp = new Date().toISOString();
     const logLine = `${timestamp} | PROMPT: ${userPrompt} | RESULT: ${result}\n`;
-    require('fs').appendFileSync('./capstone/agent_run.log', logLine, 'utf8');
+    fs.appendFileSync('./capstone/agent_run.log', logLine, 'utf8');
 
-    // 5) imprimir resultado final (o que será mostrado na gravação)
     console.log('AGENT RESULT:', result);
     process.exit(0);
   } catch (err) {

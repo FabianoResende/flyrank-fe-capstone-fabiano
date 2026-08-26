@@ -1,5 +1,4 @@
-// capstone/mcp_test_server.js
-const http = require('http');
+﻿const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
@@ -7,7 +6,7 @@ const PORT = 3001;
 const HOST = '127.0.0.1';
 const ROOT = path.resolve(__dirname); // pasta capstone
 
-const server = http.createServer(async (req, res) => {
+const server = http.createServer((req, res) => {
   if (req.method !== 'POST' || req.url !== '/execute') {
     res.writeHead(404, { 'Content-Type': 'application/json' });
     res.end(JSON.stringify({ ok: false, error: 'not found' }));
@@ -25,10 +24,9 @@ const server = http.createServer(async (req, res) => {
         return;
       }
 
-      // Normalize and resolve path relative to capstone root
-      let requested = reqBody.path;
-      // If user sent an absolute Windows path, allow it only if inside ROOT
-      let fullPath = path.isAbsolute(requested) ? path.resolve(requested) : path.resolve(ROOT, requested);
+      // Resolve path: allow relative to ROOT or absolute only if inside ROOT
+      const requested = reqBody.path;
+      const fullPath = path.isAbsolute(requested) ? path.resolve(requested) : path.resolve(ROOT, requested);
 
       // Security: ensure file is inside ROOT
       const allowedRoot = ROOT + path.sep;
@@ -38,7 +36,6 @@ const server = http.createServer(async (req, res) => {
         return;
       }
 
-      // Read file
       const content = fs.readFileSync(fullPath, 'utf8');
       const firstLine = content.split(/\r?\n/)[0] || '';
       res.writeHead(200, { 'Content-Type': 'application/json' });
