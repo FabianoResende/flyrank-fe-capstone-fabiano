@@ -20,3 +20,9 @@
 - O servidor grava `mcp_test_server.pid` em `capstone/` ao iniciar.
 - Logs do agente: `capstone/agent_run.log`.
 - Para parar o servidor de forma controlada, use o PID escrito em `mcp_test_server.pid`.
+
+## Provas (PROOFS)
+As imagens em `capstone/PROOFS/` comprovam:
+- 01_server_listening.png — servidor MCP rodando.
+- 02_agent_result.png — agente retornando o resultado.
+- 01-portfolio-home.png, 04-estudo-de-caso.png, etc. — páginas do portfólio.
