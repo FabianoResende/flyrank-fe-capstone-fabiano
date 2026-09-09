@@ -1,0 +1,9 @@
+﻿{
+  "allowed_paths": ["./capstone", "./agente/proofs", "./PROOFS"],
+  "read_file": true,
+  "list_directory": true,
+  "server": {
+    "host": "localhost",
+    "port": 8123
+  }
+}
