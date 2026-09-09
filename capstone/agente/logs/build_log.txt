@@ -1,9 +1,0 @@
-﻿
-2026-09-09T20:24:16.548Z | START RUN
-2026-09-09T20:24:16.572Z | ERROR: connect ECONNREFUSED ::1:8123; connect ECONNREFUSED 127.0.0.1:8123
-2026-09-09T20:28:33.487Z | START RUN
-2026-09-09T20:28:33.495Z | WARN: MCP list failed: connect ECONNREFUSED 127.0.0.1:8123. Falling back to local FS.
-2026-09-09T20:28:33.520Z | ERROR: (content || "").slice is not a function
-2026-09-09T20:28:58.750Z | START RUN
-2026-09-09T20:28:58.761Z | WARN: MCP list failed: connect ECONNREFUSED 127.0.0.1:8123. Falling back to local FS.
-2026-09-09T20:28:58.765Z | ERROR: (content || "").slice is not a function
