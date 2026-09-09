@@ -1,5 +1,16 @@
-﻿/agente/logs/
+﻿# agent artifacts and logs
+/agente/logs/
 /agente/proofs/
 /agente/proofs/*.mp4
+
+# proofs and build artifacts
+/PROOFS/
+/PROOFS/*.zip
+/PROOFS/*.png
+/PROOFS/*.jpg
+/PROOFS/*.jpeg
+/PROOFS/*.gif
+
+# node and env
 /node_modules/
 /.env
