@@ -1,0 +1,48 @@
+# Notas de Estudo — Capstone FE-04: Plataforma de Suporte Técnico com IA
+
+> Fonte: [capstone-alpha-sable.vercel.app](https://capstone-alpha-sable.vercel.app) (deploy do capstone de Fabiano Resende)
+
+## 1. Visão Geral
+
+Aplicação web publicada na **Vercel**, correspondente à etapa **FE-04** do capstone da trilha *Frontend AI Engineering* (FlyRank). Representa o **esqueleto inicial** do projeto: estrutura de rotas, layout raiz e páginas provisórias, ainda sem funcionalidades completas implementadas.
+
+- **Título do app:** Plataforma de Suporte Técnico com IA
+- **Etapa:** Capstone FE-04
+- **Autor:** Fabiano Resende
+- **Descrição oficial:** "Esqueleto do capstone FE-04: rotas, layout raiz, navegação e páginas provisórias."
+
+## 2. Propósito da Aplicação
+
+Uma plataforma de **suporte técnico assistido por Inteligência Artificial**, cobrindo três frentes principais:
+1. Gestão de tickets de suporte.
+2. Diagnóstico de problemas com apoio de IA.
+3. Registro de ocorrências operacionais.
+
+## 3. Estrutura de Rotas
+
+| Rota | Nome | Função pretendida | Status atual |
+|---|---|---|---|
+| `/` | Início | Página inicial com navegação e visão geral | Implementada (estática) |
+| `/tickets` | Tickets | Listagem e criação de tickets de suporte | Provisória — "Em breve: tabela de tickets e formulário de criação" |
+| `/diagnostico` | Diagnóstico IA | Envio de problema e análise assistida por IA | Provisória — "Em breve: formulário de descrição do problema e resposta da IA" |
+| `/ocorrencias` | Ocorrências | Registro e revisão de ocorrências operacionais | Provisória — "Em breve: lista de ocorrências e formulário de registro" |
+| `/health` | Health Check | Verificação de saúde da aplicação | **Funcional** — retorna `Status: OK` com timestamp dinâmico |
+
+## 4. Destaques Técnicos
+
+- **Layout raiz e navegação global:** todas as páginas compartilham o mesmo cabeçalho de navegação, indicando uso de um layout compartilhado (padrão comum em frameworks como Next.js).
+- **`/health` já é funcional:** diferente das demais rotas (que são placeholders), essa página retorna dados reais (status + timestamp em tempo real), sugerindo que a aplicação já tem lógica de backend/API mínima implementada.
+- **Abordagem incremental:** o restante das páginas está deliberadamente marcado como "provisório", confirmando uma estratégia de desenvolvimento por etapas — primeiro a estrutura (rotas e navegação), depois as funcionalidades de IA.
+
+## 5. Pontos-Chave
+
+- ✅ O nome "FE-04" indica que este é um estágio específico dentro de uma sequência maior de entregas do capstone.
+- ✅ A aplicação já está publicada e acessível publicamente via Vercel, validando o pipeline de deploy.
+- ✅ O endpoint `/health` funcionando é um sinal de maturidade técnica: prática comum em aplicações reais para monitoramento de disponibilidade.
+- ✅ As três funcionalidades centrais (tickets, diagnóstico por IA, ocorrências) definem o escopo funcional final do produto.
+
+## 6. Perguntas de Estudo
+
+1. Por que implementar um endpoint `/health` antes das funcionalidades principais é uma boa prática de engenharia?
+2. Que vantagens um layout raiz compartilhado (header/navegação comuns) traz para a manutenção do projeto?
+3. Como a página `/diagnostico` provavelmente se integrará a um modelo de IA nas próximas etapas do capstone?

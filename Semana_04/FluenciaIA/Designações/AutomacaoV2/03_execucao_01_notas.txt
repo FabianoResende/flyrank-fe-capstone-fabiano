@@ -1,0 +1,73 @@
+# Notas de Estudo — FlyRank FE Capstone (Fabiano Resende)
+
+> Fonte: [github.com/FabianoResende/flyrank-fe-capstone-fabiano](https://github.com/FabianoResende/flyrank-fe-capstone-fabiano)
+
+## 1. Visão Geral
+
+Repositório do **projeto capstone** da trilha **Frontend AI Engineering** da FlyRank, de autoria de Fabiano Resende. O foco é configurar e demonstrar um fluxo de desenvolvimento **assistido por Inteligência Artificial**.
+
+- **Deploy/demo:** [capstone-alpha-sable.vercel.app](https://capstone-alpha-sable.vercel.app)
+- **Licença:** presente no repositório (arquivo `LICENSE`)
+
+## 2. Objetivo do Projeto
+
+Configurar um ambiente de desenvolvimento assistido por IA, integrando:
+
+- **Claude Code** (assistente de programação por IA)
+- **Git** (controle de versão)
+- **Node.js** (ambiente de execução)
+
+## 3. Stack e Ferramentas
+
+| Ferramenta | Papel no projeto |
+|---|---|
+| Node.js LTS | Ambiente de execução JavaScript |
+| Git | Controle de versão |
+| VS Code | Editor de código |
+| Claude Code | Assistente de IA para programação |
+| GitHub | Hospedagem e colaboração do repositório |
+
+## 4. Estrutura do Repositório
+
+O projeto segue **convenções profissionais** e adota **Conventional Commits** como padrão de commits.
+
+**Pastas e arquivos principais:**
+
+- `FE-03_Fluxo_IA/` — material relacionado ao fluxo de trabalho com IA
+- `Semana_03/` — conteúdo referente à semana 3 da trilha
+- `capstone/` — código-fonte do projeto capstone
+- `CLAUDE.md` — regras de comportamento para o assistente Claude Code
+- `README.md` — documentação principal
+- `index.html` — ponto de entrada da aplicação web
+- `.gitignore`, `LICENSE` — arquivos de configuração e licenciamento
+
+## 5. Regras do Assistente (`CLAUDE.md`)
+
+O arquivo `CLAUDE.md` define o papel do Claude Code como **assistente de programação** dentro do projeto, com diretrizes claras:
+
+### Como o assistente deve agir
+- Explicar código com clareza.
+- Sugerir melhorias com base em boas práticas.
+- Criar commits usando **Conventional Commits**.
+- Revisar Pull Requests e apontar problemas.
+- Ajudar a estruturar funcionalidades.
+
+### Convenções adotadas
+- Commits seguem o padrão **Conventional Commits**.
+- Código deve ser organizado e comentado.
+- Arquivos devem ser mantidos limpos e consistentes.
+
+## 6. Pontos-Chave para Revisão
+
+- ✅ Projeto educacional focado em **engenharia de fluxo com IA no frontend**.
+- ✅ Combina ferramentas tradicionais (Git, Node.js) com um assistente de IA (Claude Code) integrado ao processo de desenvolvimento.
+- ✅ Padronização via **Conventional Commits** garante histórico de commits legível e semântico.
+- ✅ Estrutura de pastas indica progressão por semanas/etapas da trilha (ex.: `Semana_03`, `FE-03_Fluxo_IA`).
+- ✅ Aplicação publicada via Vercel, indicando entrega de um produto funcional ao final do capstone.
+
+## 7. Possíveis Perguntas de Estudo
+
+1. O que diferencia um fluxo de desenvolvimento "assistido por IA" de um fluxo tradicional?
+2. Por que usar Conventional Commits em um projeto com IA integrada?
+3. Qual o papel do arquivo `CLAUDE.md` na governança do comportamento do assistente?
+4. Como a estrutura de pastas reflete a progressão pedagógica da trilha (semanas/etapas)?

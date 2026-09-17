@@ -1,0 +1,61 @@
+✅ FL-04 — Tempo e Pontos de Falha
+Comparação de tempo 
+Método manual (sem pipeline)
+Com base no documento oficial:
+
+Coleta e síntese: 1h30
+
+Rascunho e revisão: 2h
+
+Formatação final: 1h
+
+Total manual: 4h30
+
+Método com pipeline (NotebookLM + Claude)
+Com base no documento oficial:
+
+Coleta e síntese: 0h30
+
+Rascunho e revisão: 0h45
+
+Formatação final: 0h20
+
+Total com pipeline: 1h35
+
+Estimativa real de tempo economizado
+Economia total:  
+4h30 – 1h35 = ~3 horas economizadas
+
+Economia por entrada (5 execuções):  
+≈ 36 minutos por entrada
+
+------------------------------------------------------------
+
+Pontos de falha conhecidos (reais do seu fluxo)
+Fontes inacessíveis (ex.: LinkedIn)  
+Claude não conseguiu acessar perfis individuais → substituição por fonte pública.
+
+Conteúdo minimalista  
+Páginas com pouco texto exigiram interpretação cuidadosa para evitar extrapolação.
+
+Mistura de contexto residual  
+Claude reutilizou parte de uma execução anterior → revisão humana necessária.
+
+Dependência de ferramentas  
+Se NotebookLM ou Claude caem, o fluxo para.
+
+PDFs complexos  
+Tabelas podem perder formatação na síntese.
+
+------------------------------------------------------------
+
+Revisão humana obrigatória (real)
+Verificar se os conceitos estão corretos.
+
+Ajustar termos técnicos quando necessário.
+
+Garantir que a linguagem final está adequada ao público-alvo.
+
+Remover qualquer resquício de contexto residual.
+
+Validar que nenhuma informação foi inventada pela IA.

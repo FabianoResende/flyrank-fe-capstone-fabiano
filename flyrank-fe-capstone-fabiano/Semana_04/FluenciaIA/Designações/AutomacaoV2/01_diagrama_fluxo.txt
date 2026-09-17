@@ -1,0 +1,18 @@
+📘 FL‑04 — Diagrama do Fluxo de Trabalho 
+Pipeline escolhido: Notas de Estudo Baseadas em Fontes
+Etapas principais
+Coletar fontes (links, PDFs, textos).
+Sintetizar conteúdo (NotebookLM).
+Rascunhar notas de estudo (Projeto Claude).
+Revisar clareza e estrutura (Claude).
+Formatar em Markdown ou texto final (Claude).
+Diagrama (linha única)
+Código
+Coletar → Sintetizar → Rascunhar → Revisar → Formatar
+
+Resumo técnico:  
+O fluxo segue uma sequência linear com handoffs definidos entre ferramentas no‑code.
+NotebookLM realiza a síntese inicial; Claude executa as etapas de rascunho, revisão e formatação.
+O resultado final é um documento de estudo estruturado e reutilizável.
+
+

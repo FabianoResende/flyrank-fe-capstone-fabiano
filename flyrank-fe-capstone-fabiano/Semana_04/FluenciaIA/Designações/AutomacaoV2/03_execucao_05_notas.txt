@@ -1,0 +1,124 @@
+# Notas de Estudo — Semana 3: "Map It & Give It a Face" (FlyRank AI Internship)
+
+> Fonte: [aifluency.flyrank.ai/week-03.html](https://aifluency.flyrank.ai/week-03.html)
+
+## 1. Visão Geral
+
+- **Fase do programa:** Foundations (Semana 3 de 10)
+- **Tempo estimado:** 6 horas
+- **Tema central:** definir exatamente o que vai em cada página do portfólio (mapa de conteúdo) e depois dar a ele uma identidade visual — coerente, calma e feita a partir de poucas decisões repetidas.
+- **Princípio-guia:** *"Consistência, não talento."*
+
+## 2. Ideia Central
+
+- **O design é a moldura, não a pintura.** O trabalho do estagiário é a pintura; o design deve emoldurá-lo, nunca competir com ele.
+- Uma moldura simples e calma valoriza a pintura; uma moldura barulhenta rouba a atenção.
+- Quase tudo que parece amador é **aleatoriedade** (três fontes, cores que brigam, espaçamento inconsistente). Quase tudo que parece profissional é o oposto: **poucas escolhas, feitas uma vez, repetidas**.
+- A IA pode gerar cem imagens em minutos — a habilidade real não é gerar, é **julgar** qual serve ao trabalho e saber quando uma captura de tela real vale mais que qualquer imagem gerada.
+
+## 3. Por Que Isso Importa
+
+- Um bom estudo de caso no lugar errado ainda falha: antes de construir, é preciso ter a **frase-âncora** (one-line claim) e um **mapa de conteúdo** claro.
+- Uma aparência consistente é o que separa um portfólio que parece intencional de um que parece improvisado — isso vem de decisões, não de talento.
+- Como a IA permite gerar qualquer imagem em segundos, o **julgamento** importa mais que a geração: escolher o que serve à prova, rejeitar o resto, e saber quando uma captura real é melhor.
+
+**Regra do portfólio:** se o design é a coisa mais memorável da página, algo está invertido — as pessoas vieram ver o trabalho, não a moldura.
+
+## 4. Estrutura das Tarefas (Assignments)
+
+### 4.1 The Through-Line — Mapear Conteúdo e CTAs
+1. Escrever a **frase-âncora** (one-line claim): a única frase que o visitante deve lembrar. Gerar dez opções com IA, depois escolher e refinar uma — a escolha é sua.
+2. Construir um **mapa de conteúdo**: para cada página, as seções em ordem, qual estudo de caso vai onde (o mais forte primeiro), e a chamada para ação (CTA) nomeada, tudo conduzindo à ação única definida na Semana 1. Anotar qualquer prova ainda faltante (capturas, link de demo, repositório, números, depoimento).
+
+### 4.2 Decide Once — Construir o Kit de Identidade
+1. Escolher a tipografia: uma ou duas fontes gratuitas (uma para títulos, outra para corpo de texto; podem ser a mesma).
+2. Escolher a paleta: uma cor principal, texto quase-preto, fundo quase-branco, e no máximo um destaque (accent) — calmos o suficiente para que o trabalho seja o elemento mais chamativo da página.
+3. Criar um logo ou favicon simples, e escrever uma nota de estilo de duas linhas (fontes, códigos hex, uma frase sobre o clima/mood). Adicionar tudo ao workspace de IA para manter a consistência na construção.
+
+### 4.3 Kill Your Darlings — Curadoria de Imagens
+1. Listar as imagens que o portfólio realmente precisa, de acordo com o mapa de conteúdo.
+2. Para o próprio trabalho: usar **capturas reais**, limpas, recortadas e legíveis.
+3. Para o "tecido conectivo" (elementos decorativos): gerar opções em um estilo consistente; para qualquer coisa que represente a própria pessoa, usar foto real.
+4. Fazer curadoria rigorosa e escrever uma ou duas linhas sobre uma imagem gerada que foi rejeitada e por quê.
+
+## 5. Entregável
+
+- A frase-âncora (one-line claim).
+- O mapa de conteúdo (páginas, seções, casos, CTAs) com a lista de "ainda preciso reunir".
+- O kit de identidade em uma página (fontes nomeadas, paleta com códigos hex, logo/favicon, nota de estilo).
+- O conjunto final de imagens com a nota de rejeição.
+
+**Onde enviar:** portal do internship, no card da tarefa da semana. URLs públicas em **Deliverable links** (uma por linha); capturas e arquivos sem URL em **Files**; contexto para o revisor em **Notes**.
+
+## 6. Critérios de Avaliação (Pass/Revise)
+
+- A frase é única e memorável, não um parágrafo.
+- Cada página tem seções ordenadas e uma CTA nomeada, conduzindo à ação única; a lista de itens faltantes é honesta.
+- Uma ou duas fontes e uma paleta enxuta (cerca de 3 a 4 cores) com códigos hex reais.
+- Existe um logo ou favicon simples, e a nota de estilo descreve um clima coerente que emoldura o trabalho, sem competir com ele.
+- O trabalho é mostrado com capturas reais, não substitutos gerados por IA; imagens geradas (quando existirem) compartilham um estilo consistente.
+- A nota de rejeição demonstra julgamento genuíno, não apenas "gostei desta".
+
+## 7. A Jogada da Semana: Decidir Uma Vez, Depois Julgar Sem Piedade
+
+Usar a IA para **gerar opções e checar escolhas**, não para decidir. Gerar algumas opções de imagem e rejeitar a maioria de propósito — essa rejeição é a habilidade real.
+
+**Prompts sugeridos (resumo):**
+1. **Escolher paleta e fontes** — pedir três pares de fontes (título + corpo) gratuitas do Google Fonts, cada uma com uma linha sobre o clima que transmite, e três paletas combinando (cor principal, texto quase-preto, fundo quase-branco, um destaque) em hex.
+2. **Fixar um guia de estilo de uma linha** — depois de decidido, pedir um guia de estilo compacto e reutilizável (fonte/tamanho para títulos, corpo e rótulos; hex exatos; espaçamento).
+3. **Checar contraste e legibilidade** — verificar se as cores escolhidas têm contraste suficiente, inclusive para baixa visão, e pedir sugestões mais seguras se necessário.
+
+## 8. Exemplos Ilustrativos
+
+- **Iris** (UX): resistiu à tentação de um herói animado com imagem abstrata gerada; optou por uma fonte só (Inter, dois pesos), paleta quieta (texto quase-preto sobre branco quente, um accent verde-azulado). Rejeitou três imagens geradas por parecerem artificiais ("AI slop") e usou um título limpo sobre espaço em branco.
+- **Dorian** (marketing): fez a mesma escolha por outro motivo — queria que os números de "antes e depois" fossem o elemento mais vibrante da página, então usou quase-preto, branco quente e um único destaque verde.
+- **Recomendação por área:** designers têm a régua de qualidade mais alta, pois esta semana é prova em si; para as demais áreas (machine learning, marketing, dev), o recomendado é ser ainda mais discreto, para que demos, números e entregas sejam inquestionavelmente o destaque.
+
+## 9. Comparativo: Amador vs. Intencional
+
+| Parece amador | Parece intencional |
+|---|---|
+| Três fontes, duas decorativas | Uma fonte, dois pesos |
+| Cinco cores vibrantes competindo | Quase-preto, quase-branco, um destaque |
+| Imagem de herói gerada com aparência artificial ("AI slop") | Título limpo sobre espaço em branco, com capturas reais abaixo |
+| Tudo espremido junto | Espaço generoso ao redor de cada elemento |
+
+## 10. Armadilhas a Evitar
+
+- **Ofuscar o próprio trabalho** — um fundo chamativo que enterra os estudos de caso. A discrição vence.
+- **"AI slop"** — se uma imagem gerada tem aquela aparência de vidro derretido/artificial, descartá-la sem hesitar.
+- **Excesso de fontes e cores** — quando algo parece errado, a solução quase sempre é usar menos elementos e mais espaço.
+
+## 11. O Que é "Bom Resultado"
+
+- Todas as páginas parecem parte do mesmo site, feito pela mesma pessoa.
+- O trabalho é o elemento mais colorido e memorável da página.
+- A nota de estilo poderia ser entregue a um estranho, que conseguiria manter a consistência.
+
+## 12. Glossário da Semana
+
+| Termo | Definição |
+|---|---|
+| **One-line claim (proposta de valor)** | A única frase que um visitante deve lembrar sobre você |
+| **Content map (mapa de conteúdo)** | O que vai em cada página, em que ordem, e para onde cada página direciona o visitante |
+| **Visual identity (identidade visual)** | O pequeno conjunto de escolhas consistentes que fazem o site parecer intencional |
+| **Palette (paleta)** | O punhado de cores: principal, quase-preto, quase-branco, talvez um destaque |
+| **Hex code (código hex)** | Uma cor escrita como código (ex.: `#54E399`), garantindo consistência em todo o site |
+| **Favicon** | O pequeno ícone na aba do navegador; detalhe que dá sensação de acabamento |
+| **Contrast (contraste)** | Quão facilmente o texto se destaca do fundo; contraste forte é uma forma de acessibilidade |
+| **AI slop** | Imagens genéricas geradas por IA com aparência artificial/derretida; capturas reais são sempre melhores |
+
+## 13. Recursos Vinculados
+
+- [Refactoring UI](https://refactoringui.com/) — táticas de design para não-designers (espaçamento, hierarquia, cor, tipografia)
+- [Practical Typography](https://practicaltypography.com/) — livro web gratuito sobre erros comuns de tipografia
+- [Google Fonts](https://fonts.google.com/) — fontes gratuitas com combinações prontas
+- [Coolors](https://coolors.co/) — gerador e travador de paletas de cores
+- [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/) — verificador de contraste e legibilidade
+
+## 14. Perguntas de Estudo
+
+1. Por que "poucas escolhas repetidas" transmite mais profissionalismo do que variedade de fontes e cores?
+2. De que forma a IA deve ser usada nesta etapa — como geradora de opções ou como decisora final?
+3. Por que uma captura de tela real pode superar uma imagem gerada por IA, mesmo sendo esta última mais "bonita"?
+4. Como o mapa de conteúdo e o one-line claim se conectam à ação única definida na Semana 1?

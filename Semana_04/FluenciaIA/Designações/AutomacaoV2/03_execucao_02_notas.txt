@@ -1,0 +1,34 @@
+# Notas de Estudo — Página Inicial do Capstone (Fabiano Resende)
+
+> Fonte: [fabianoresende.github.io/flyrank-fe-capstone-fabiano](https://fabianoresende.github.io/flyrank-fe-capstone-fabiano)
+
+## 1. Identificação da Página
+
+- **Título:** "Fabiano Faria de Resende – Vazio, mas Vivo"
+- **Autor:** Fabiano Faria de Resende
+- **Natureza:** Página web publicada via GitHub Pages, hospedada no repositório do capstone `flyrank-fe-capstone-fabiano`
+
+## 2. Conteúdo Original
+
+A página contém apenas uma frase de abertura, descrevendo-se como o **primeiro marco** do projeto:
+
+> "Primeiro passo da minha pilha de IA na FlyRank: uma página em branco, mas viva."
+
+## 3. Interpretação e Contexto
+
+- O título **"Vazio, mas Vivo"** sugere uma metáfora intencional: uma página tecnicamente simples (minimalista/em branco), mas já **funcional e publicada** — ou seja, o ambiente de deploy está ativo desde o início.
+- A expressão **"pilha de IA"** (AI stack) indica que essa página é o **ponto de partida** de uma sequência de etapas do capstone da trilha *Frontend AI Engineering*, provavelmente evoluindo em complexidade nas próximas semanas/fases.
+- Funciona como uma espécie de **"Hello World"** do projeto: valida que o pipeline de publicação (GitHub Pages) está configurado corretamente antes de adicionar funcionalidades.
+
+## 4. Pontos-Chave
+
+- ✅ Marca o **início simbólico** do desenvolvimento do capstone.
+- ✅ Confirma que a infraestrutura de deploy (GitHub Pages) já está operacional.
+- ✅ Estabelece o tom do projeto: incremental, começando do mínimo viável.
+
+## 5. Pergunta de Estudo
+
+- Por que é uma boa prática começar um projeto com um "deploy vazio" antes de adicionar funcionalidades?
+
+---
+*Observação: o conteúdo-fonte é extremamente sucinto (apenas título + uma frase). Caso exista conteúdo adicional não capturado nesta página (ex.: carregado via JavaScript), envie o HTML/texto completo para uma síntese mais detalhada.*

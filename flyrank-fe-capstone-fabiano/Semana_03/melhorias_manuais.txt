@@ -1,0 +1,9 @@
+Após revisar o código gerado pela IA, realizei diversas melhorias manuais para garantir funcionamento correto e maior qualidade da aplicação.
+
+- Removi imports quebrados do boilerplate (`index.css` e `reportWebVitals`) que impediam a compilação.
+- Ajustei manualmente a estrutura de pastas, movendo o arquivo `.env` para a raiz do projeto.
+- Corrigi erros de caminho em imports dentro de `pages/home`.
+- Refatorei trechos do ViewModel para garantir que estados fossem inicializados corretamente.
+- Ajustei manualmente o Header para melhorar a experiência de busca.
+- Revisei o serviço OMDB para mapear corretamente os campos retornados pela API.
+- Corrigi erros de compilação e warnings do React.

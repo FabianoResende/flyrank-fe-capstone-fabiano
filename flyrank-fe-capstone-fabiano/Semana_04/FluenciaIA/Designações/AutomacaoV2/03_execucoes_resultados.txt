@@ -1,0 +1,110 @@
+FL-04 — Execuções e Resultados (5 corridas)
+
+Execução 1
+Fonte:  
+https://github.com/FabianoResende/flyrank-fe-capstone-fabiano
+
+Resumo gerado:  
+Repositório do projeto capstone da trilha Frontend AI Engineering, com foco em configurar um ambiente de desenvolvimento assistido por IA (Claude Code, Git, Node.js), seguindo convenções profissionais e Conventional Commits.
+
+Notas de estudo (versão final):
+
+Objetivo: ambiente de desenvolvimento assistido por IA.
+
+Stack: Node.js, Git, VS Code, Claude Code, GitHub.
+
+Estrutura: pastas por semana/etapa (FE-03_Fluxo_IA, Semana_03, capstone), arquivos de governança (CLAUDE.md, README.md, LICENSE).
+
+Regras: uso de Conventional Commits e papel explícito do assistente Claude no fluxo de desenvolvimento.
+
+Observações:  
+Funcionou bem para entender o contexto do capstone e a organização profissional do repositório; não houve limitação técnica, só necessidade de síntese cuidadosa para não repetir o README inteiro.
+
+------------------------------------------------------------
+
+Execução 2
+Fonte:  
+https://fabianoresende.github.io/flyrank-fe-capstone-fabiano
+
+Resumo gerado:  
+Página “Vazio, mas Vivo”, uma página em branco publicada via GitHub Pages, usada como primeiro marco da pilha de IA: tecnicamente mínima, mas já ao vivo e funcional.
+
+Notas de estudo (versão final):
+
+Título: “Fabiano Faria de Resende – Vazio, mas Vivo”.
+
+Conteúdo: uma frase sobre o “primeiro passo” da pilha de IA.
+
+Significado: validação do deploy, metáfora de página vazia porém viva, início simbólico do projeto.
+
+Papel: “Hello World” do capstone, garantindo que o pipeline de publicação está configurado antes das funcionalidades.
+
+Observações:  
+Por ser uma página extremamente minimalista, a síntese exigiu interpretação de contexto; o pipeline funcionou, mas dependeu de leitura cuidadosa para não extrapolar além do que o texto realmente diz.
+
+------------------------------------------------------------
+
+Execução 3
+Fonte:  
+https://capstone-alpha-sable.vercel.app
+
+Resumo gerado:  
+Aplicação FE‑04 publicada na Vercel, com rotas estruturadas (/, /tickets, /diagnostico, /ocorrencias, /health), layout raiz compartilhado e páginas provisórias, sendo /health já funcional com status e timestamp dinâmico.
+
+Notas de estudo (versão final):
+
+Visão geral: “Plataforma de Suporte Técnico com IA”, esqueleto inicial da aplicação.
+
+Rotas: home estática; três rotas de negócio marcadas como “em breve”; /health funcional.
+
+Destaques técnicos: layout compartilhado, endpoint de health check, abordagem incremental (estrutura primeiro, funcionalidades depois).
+
+Escopo: tickets, diagnóstico assistido por IA, ocorrências operacionais.
+
+Observações:  
+A rota /health foi o ponto mais rico tecnicamente; o restante ainda é placeholder, então o pipeline trabalhou mais em estrutura e intenção do que em lógica de negócio.
+
+------------------------------------------------------------
+
+Execução 4
+Fonte:  
+https://aifluency.flyrank.ai/week-04.html
+
+Resumo gerado:  
+Semana 4 “Pick the Stack”: escolher a stack com apoio de IA, publicar uma página “vazia, mas ao vivo” e treinar a habilidade de usar IA como conselheira que apresenta opções com trade‑offs, não como oráculo.
+
+Notas de estudo (versão final):
+
+Tema: decisão de stack para o portfólio, com IA ajudando a mapear opções.
+
+Tarefas: Three Roads (três opções de stack com restrições reais) e Empty but Live (deploy de página em branco).
+
+Critérios: ferramentas gratuitas, capacidade de manutenção, forma de exibir o trabalho, honestidade sobre backend.
+
+Conceitos: no‑code vs código com IA vs framework completo; importância de “vazio, mas ao vivo” como marco.
+
+Observações:  
+Conteúdo rico e bem estruturado; o pipeline funcionou como amplificador de clareza, organizando ideias em seções e perguntas de estudo sem precisar inventar nada.
+
+------------------------------------------------------------
+
+Execução 5
+Fonte:  
+https://aifluency.flyrank.ai/week-03.html
+
+Resumo gerado:  
+Semana 3 “Map It & Give It a Face”: mapear conteúdo do portfólio (frase‑âncora, mapa de páginas, CTAs) e definir identidade visual calma e consistente, com poucas escolhas repetidas e curadoria rigorosa de imagens.
+
+Notas de estudo (versão final):
+
+Ideia central: design como moldura, não pintura; consistência acima de talento.
+
+Tarefas: Through‑Line (conteúdo + CTAs), Decide Once (tipografia, paleta, logo, nota de estilo), Kill Your Darlings (curadoria de imagens reais vs geradas).
+
+Critérios: poucas fontes, paleta enxuta, imagens reais para o trabalho, rejeição consciente de “AI slop”.
+
+Resultado desejado: páginas que parecem do mesmo site, com o trabalho como protagonista.
+
+Observações:  
+Aqui o pipeline brilhou na organização: transformou um texto longo em estrutura clara de tarefas, critérios, armadilhas e glossário, útil para estudo e reuso.
+
