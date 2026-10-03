@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 22, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/fabia/flyrank-fe-capstone-fabiano/src/pages/tools/lead-score-runner.tsx"],"sourcesContent":["import React from \"react\";\r\nimport dynamic from \"next/dynamic\";\r\n\r\nconst LeadScoreRunner = dynamic(() => import(\"../../components/LeadScoreRunner\"), { ssr: false });\r\n\r\nexport default function Page() {\r\n  return (\r\n    <main style={{ padding: 24 }}>\r\n      <h1>Lead Score Tool Runner</h1>\r\n      <LeadScoreRunner />\r\n    </main>\r\n  );\r\n}\r\n"],"names":["LeadScoreRunner","ssr","Page","style","padding"],"mappings":";;;;;AACA;;;;AAEA,MAAMA,kBAAkB,IAAA,mIAAO,EAAC;;;;;;IAAoDC,KAAK;;AAE1E,SAASC;IACtB,qBACE,qKAAC;QAAKC,OAAO;YAAEC,SAAS;QAAG;;0BACzB,qKAAC;0BAAG;;;;;;0BACJ,qKAACJ;;;;;;;;;;;AAGP"}}]
+}
