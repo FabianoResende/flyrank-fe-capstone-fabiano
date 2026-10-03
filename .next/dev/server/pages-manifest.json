@@ -1,6 +1,0 @@
-{
-  "/_app": "pages/_app.js",
-  "/_document": "pages/_document.js",
-  "/api/tools/lead-score": "pages/api/tools/lead-score.js",
-  "/tools/lead-score-runner": "pages/tools/lead-score-runner.js"
-}
