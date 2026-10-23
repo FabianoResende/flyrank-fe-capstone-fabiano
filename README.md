@@ -1,11 +1,20 @@
-# FlyRank FE Capstone — Fabiano Resende
+﻿# FlyRank FE Capstone â€” Fabiano Resende
 
-Este repositório contém o projeto capstone da trilha Frontend AI Engineering da FlyRank.
+**Engenharia Front‑end + IA — transformar evidências em recomendações executáveis.**
+
+
+Este repositÃ³rio contÃ©m o projeto capstone da trilha Frontend AI Engineering da FlyRank.
 
 ## Objetivo
+
+**Engenharia Front‑end + IA — transformar evidências em recomendações executáveis.**
+
 Configurar um ambiente de desenvolvimento assistido por IA usando Claude Code, Git e Node.js.
 
 ## Ferramentas
+
+**Engenharia Front‑end + IA — transformar evidências em recomendações executáveis.**
+
 - Node.js LTS
 - Git
 - VS Code
@@ -13,4 +22,8 @@ Configurar um ambiente de desenvolvimento assistido por IA usando Claude Code, G
 - GitHub
 
 ## Estrutura
-Este repositório segue convenções profissionais e utiliza Commits Convencionais.
+
+**Engenharia Front‑end + IA — transformar evidências em recomendações executáveis.**
+
+Este repositÃ³rio segue convenÃ§Ãµes profissionais e utiliza Commits Convencionais.
+
